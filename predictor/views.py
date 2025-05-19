@@ -64,3 +64,6 @@ def predict(request):
 def index(request):
     communes = Commune.objects.all()
     return render(request, 'predictor/form.html', {'communes': communes})
+
+def home(request):
+    return render(request, 'predictor/home.html')

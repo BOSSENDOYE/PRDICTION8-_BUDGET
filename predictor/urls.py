@@ -4,6 +4,7 @@ from . import views
 app_name = 'predictor'
 
 urlpatterns = [
-       path('', views.index, name='index'),
-       path('predict/', views.predict, name='predict'),
-   ]
+    path('', views.home, name='home'),
+    path('predict/', views.predict, name='predict'),
+    path('form/', views.index, name='index'),
+]
